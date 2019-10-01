@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Who I Am",
+    "body": "My name is Keanu, and I am a self-taught full stack web developer based in Portland, Oregon. I have experience writing web applications and APIs in C#, JavaScript, and Python. I also have experience with front end frameworks such as React and Vue."
+  },
+  {
+    "title": "What I Do",
+    "body": "My domain is in the realm of business logic. I love brainstorming architecture and data/database modeling. The process of iteratively designing, implementing, and refactoring a project makes me happy. Doing those things well makes me even happier."
+  },
+  {
+    "title": "About Me",
+    "body": "I spend the bulk of my free time learning. I enjoy learning programming languages, natural languages, frameworks, studying history, and philosophizing. I believe that curiosity is a massively underrated trait, and that nuance is golden. I try to communicate clearly and tactfully. I believe that people's differences can make things interesting, but it's ultimately what we share in common that makes or breaks a team."
+  }
+]
