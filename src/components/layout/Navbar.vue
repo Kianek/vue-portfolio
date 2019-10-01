@@ -1,8 +1,8 @@
 <template>
   <nav>
     <div class="nav-content">
-      <Link branding url="/" link="Keanu Allridge" />
-      <Link url="/" link="Home" />
+      <Branding />
+      <Link url="/" link="Home" exact />
       <Link url="/projects" link="Projects" />
       <Link url="/contact" link="Contact" />
     </div>
@@ -11,17 +11,21 @@
 
 <script>
 import Link from "../shared/Link";
+import Branding from "../shared/Branding";
 
 export default {
   components: {
-    Link
+    Link,
+    Branding
   }
 };
 </script>
 
 <style lang="scss" scoped>
+@import "../../styles.scss";
+
 nav {
-  background-color: #45454b;
+  background-color: $bg-secondary;
 }
 
 .nav-content {
