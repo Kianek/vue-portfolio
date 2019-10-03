@@ -35,6 +35,7 @@ export default {
   width: 100%;
 
   p {
+    font-family: Verdana, Arial, sans-serif;
     text-align: justify;
   }
 

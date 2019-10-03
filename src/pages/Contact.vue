@@ -1,30 +1,32 @@
 <template>
   <div class="container">
-    <h1 class="heading">Contact Me</h1>
-    <div class="panel">
-      <p>
-        Want to get in touch? Take a look at some of my other projects on GitHub,
-        check me out on LinkedIn, or shoot me an email directly.
-      </p>
-      <address>
-        <ul class="contact-btn-group">
-          <li>
-            <a class="contact-info btn-rounded-lt" href="https://github.com/Kianek">
-              <i class="fab fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a class="contact-info" href="https://linkedin.com/in/keanu-allridge">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a class="contact-info btn-rounded-rt" href="mailto:kallridge92@gmail.com">
-              <i class="fas fa-envelope"></i>
-            </a>
-          </li>
-        </ul>
-      </address>
+    <div class="contact-card">
+      <h1 class="heading">Contact Me</h1>
+      <div class="panel">
+        <p>
+          Want to get in touch? Take a look at some of my other projects on GitHub,
+          check me out on LinkedIn, or shoot me an email directly.
+        </p>
+        <address>
+          <ul class="contact-btn-group">
+            <li>
+              <a class="contact-info btn-rounded-lt" href="https://github.com/Kianek">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a class="contact-info" href="https://linkedin.com/in/keanu-allridge">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a class="contact-info btn-rounded-rt" href="mailto:kallridge92@gmail.com">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </div>
   </div>
 </template>
@@ -40,11 +42,17 @@ main {
   background-color: $bg-primary;
 }
 
+.contact-card {
+  margin: 0 auto;
+  width: 70%;
+}
+
 .panel > address > ul {
   list-style-type: none;
 }
 
 .panel > p {
+  font-family: Verdana, Arial, sans-serif;
   padding: 1em;
 }
 .contact-btn-group {

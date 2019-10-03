@@ -35,7 +35,7 @@ export default {
 
   .blurb {
     font-family: Verdana, Arial, sans-serif;
-    font-size: 1.1em;
+    font-size: 1em;
     text-align: justify;
     max-width: 90%;
   }
