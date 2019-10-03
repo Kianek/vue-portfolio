@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Writely",
+    "description": "A journaling API written in C# and ASP.NET Core. It features a simple membership system implemented with Identity, and data persistence handled with Entity Framework Core.",
+    "url": "https://github.com/Kianek/WritelyApi"
+  },
+  {
+    "name": "Flash Cards",
+    "description": "An API for managing a collection of flash cards. It is written in Python using the Flask framework, together with Flask-RESTful. Data persistence is handled with Flask-SQLAlchemy.",
+    "url": "https://github.com/Kianek/flask-flashcards"
+  },
+  {
+    "name": "Address Book",
+    "description": "A full stack JavaScript app for managing a list of contacts. Runs Express.js on the back end, with data persistence handled by MongoDB (Mongoose) Authentication is handled by Passport.js. The front end is ReactJS, styled in Sass.",
+    "url": "https://github.com/Kianek/address-book"
+  }
+]
