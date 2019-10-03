@@ -22,14 +22,10 @@ export default {
 </script>
 
 <style lang="scss">
-$bg-primary: #686870;
-$bg-secondary: #45454b;
-$bg-panel: #89898f;
-$link-active: #c5c5c5;
-$white: #fff;
-$orange: #ff9100;
+@import "./styles.scss";
 
 body {
+  background-color: $bg-primary;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
