@@ -1,5 +1,5 @@
 <template>
-  <router-link :class="[isBranding]" :to="url">{{ link }}</router-link>
+  <router-link :class="[isBranding]" :to="url" exact-active-class="active">{{ link }}</router-link>
 </template>
 
 <script>
@@ -37,11 +37,17 @@ export default {
 
 .link {
   color: #fff;
+  font-size: 1.1em;
   text-decoration: none;
   padding: 1em;
 
-  &:hover {
+  &:hover,
+  .active {
     color: #c5c5c5;
   }
+}
+
+.active {
+  color: #c5c5c5;
 }
 </style>
