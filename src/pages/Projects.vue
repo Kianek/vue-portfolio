@@ -3,7 +3,7 @@
     <div class="container">
       <h1 class="heading">Projects</h1>
       <ul class="projects">
-        <div v-for="project in projects" :key="project">
+        <div v-for="project in projects" :key="project.id">
           <li>
             <Project :name="project.name" :description="project.description" :url="project.url" />
           </li>
