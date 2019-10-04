@@ -22,8 +22,6 @@
 </template>
 
 <script>
-import ToggleButton from "../shared/ToggleButton";
-
 export default {
   data() {
     return {
@@ -50,9 +48,6 @@ export default {
         this.isToggled = false;
       }
     }
-  },
-  components: {
-    ToggleButton
   }
 };
 </script>
