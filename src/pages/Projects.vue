@@ -44,7 +44,7 @@ main {
   justify-content: center;
   margin: 0 auto;
   padding: 0;
-  width: 50%;
+  width: 80%;
 }
 
 @media screen and (min-width: 600px) {
