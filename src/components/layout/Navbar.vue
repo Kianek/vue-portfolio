@@ -22,8 +22,6 @@
 </template>
 
 <script>
-import Link from "../shared/Link";
-import Branding from "../shared/Branding";
 import ToggleButton from "../shared/ToggleButton";
 
 export default {
@@ -54,8 +52,6 @@ export default {
     }
   },
   components: {
-    Link,
-    Branding,
     ToggleButton
   }
 };
