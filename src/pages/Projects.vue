@@ -5,7 +5,7 @@
       <ul class="projects">
         <div v-for="project in projects" :key="project.id">
           <li>
-            <Project :name="project.name" :description="project.description" :url="project.url" />
+            <Project :name="project.name" :description="project.description" :url="project.github" />
           </li>
         </div>
       </ul>
