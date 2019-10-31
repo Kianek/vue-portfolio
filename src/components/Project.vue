@@ -1,5 +1,4 @@
 <template>
-  <div>
     <li class="project">
       <h2>{{ name }}</h2>
       <p>{{ description }}</p>
@@ -7,7 +6,6 @@
         <i class="fab fa-github-alt"></i>
       </a>
     </li>
-  </div>
 </template>
 
 <script>
@@ -61,6 +59,7 @@ export default {
 @media screen and (min-width: 600px) {
   .project {
     margin: 1rem;
+    height: 100%;
     width: 300px;
   }
 }
