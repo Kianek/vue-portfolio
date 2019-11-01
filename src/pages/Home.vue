@@ -1,5 +1,5 @@
 <template>
-  <main>
+<Page>
     <div class="container">
       <div v-for="blurb in blurbs" :key="blurb.title" class="blurbs">
         <div class="panel">
@@ -8,10 +8,11 @@
         </div>
       </div>
     </div>
-  </main>
+</Page>
 </template>
 
 <script>
+import Page from "@/components/layout/Page";
 import data from "./data/home.json";
 
 export default {
@@ -19,6 +20,9 @@ export default {
     return {
       blurbs: data,
     };
+  },
+  components: {
+    Page
   }
 };
 </script>
