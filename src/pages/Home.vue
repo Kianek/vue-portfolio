@@ -17,7 +17,7 @@ import data from "./data/home.json";
 export default {
   data() {
     return {
-      blurbs: data
+      blurbs: data,
     };
   }
 };
