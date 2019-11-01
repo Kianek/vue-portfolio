@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Navbar />
-    <router-view></router-view>
+      <router-view></router-view>
     <Footer />
   </div>
 </template>
@@ -34,5 +34,8 @@ body {
   font-family: "Oswald", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 </style>
