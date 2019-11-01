@@ -3,11 +3,7 @@
     <div class="container">
       <h1 class="heading">Projects</h1>
       <ul class="projects">
-        <div v-for="project in projects" :key="project.id">
-          <li>
-            <Project :name="project.name" :description="project.description" :url="project.github" />
-          </li>
-        </div>
+          <Project v-for="project in projects" :key="project.id" :name="project.name" :description="project.description" :url="project.github" />
       </ul>
     </div>
   </main>
@@ -34,6 +30,7 @@ export default {
 
 main {
   background-color: $bg-primary;
+  margin-bottom: auto;
 }
 
 .projects {
@@ -50,6 +47,7 @@ main {
 @media screen and (min-width: 600px) {
   .projects {
     display: flex;
+    align-items: stretch;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
