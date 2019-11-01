@@ -1,38 +1,57 @@
 <template>
+<Page>
   <div class="container">
     <div class="contact-card">
       <h1 class="heading">Contact Me</h1>
       <div class="panel">
         <p>
           Want to get in touch? Take a look at some of my other projects on GitHub,
-          check me out on LinkedIn, or shoot me an email directly.
+          check me out on LinkedIn, or shoot me a message below.
         </p>
-        <address>
-          <ul class="contact-btn-group">
-            <li>
-              <a class="contact-info btn-rounded-lt" href="https://github.com/Kianek">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-            <li>
-              <a class="contact-info" href="https://linkedin.com/in/keanu-allridge">
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </li>
-            <li>
-              <a class="contact-info btn-rounded-rt" href="mailto:kallridge92@gmail.com">
-                <i class="fas fa-envelope"></i>
-              </a>
-            </li>
-          </ul>
-        </address>
+
+        <form @submit="sendMessage">
+          <input required type="text" placeholder="Name" v-model="name">
+          <input required type="email" placeholder="Email" v-model="email">
+          <textarea required name="message" placeholder="Message" v-model="message"></textarea>
+          <input type="submit" value="Submit">
+        </form>
       </div>
     </div>
   </div>
+
+</Page>
 </template>
 
 <script>
-export default {};
+import Page from '../components/layout/Page';
+
+export default {
+  data() {
+    return {
+      name: "",
+      email: "",
+      message: ""
+    }
+  },
+  methods: {
+    sendMessage: function(e) {
+      e.preventDefault();
+
+      const message = {
+        name: this.name,
+        email: this.email,
+        message: this.message
+      };
+
+      this.name = this.email = this.message = "";
+      console.log("Submitting message!");
+      console.log(message);
+    }
+  },
+  components: {
+    Page
+  }
+};
 </script>
 
 <style lang="scss" scoped>
@@ -40,6 +59,7 @@ export default {};
 
 main {
   background-color: $bg-primary;
+  min-height: 100%;
 }
 
 .contact-card {
@@ -83,6 +103,46 @@ main {
 .contact-info:hover {
   color: $bg-secondary;
   background-color: $white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  max-width: 350px;
+
+  input, textarea {
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 1em;
+    padding: 0.5em;
+  }
+
+  input {
+    height: 1.5em;
+  }
+
+  input[type="submit"] {
+    background-color: $bg-primary;
+    color: $white;
+    height: 100%;
+    transition: 0.1s;
+
+    &:hover {
+    background-color: $bg-secondary;
+    color: orange;
+      cursor: pointer;
+    }
+  }
+
+  textarea {
+    font-size: 1em;
+    height: 5rem;
+  }
+
+  // input[type='submit'] {
+  // }
 }
 
 address {
