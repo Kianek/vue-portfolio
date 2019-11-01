@@ -1,7 +1,7 @@
 <template>
-  <div id="page">
+  <main id="page">
     <slot></slot>
-  </div>
+  </main>
 </template>
 
 
@@ -11,6 +11,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 2rem;
+  margin: auto;
+  height: 100%;
 }
 </style>
