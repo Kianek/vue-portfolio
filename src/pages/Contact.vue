@@ -105,8 +105,8 @@ main {
 form {
   display: flex;
   flex-direction: column;
-  width: 70%;
   max-width: 350px;
+  width: 70%;
 
   input, textarea {
     border: none;
