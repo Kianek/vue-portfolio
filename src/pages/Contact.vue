@@ -1,6 +1,5 @@
 <template>
 <Page>
-  <div class="container">
     <div class="contact-card">
       <h1 class="heading">Contact Me</h1>
       <div class="panel">
@@ -17,8 +16,6 @@
         </form>
       </div>
     </div>
-  </div>
-
 </Page>
 </template>
 
@@ -140,9 +137,6 @@ form {
     font-size: 1em;
     height: 5rem;
   }
-
-  // input[type='submit'] {
-  // }
 }
 
 address {
