@@ -4,7 +4,6 @@
   </main>
 </template>
 
-
 <style scoped lang="scss">
 #page {
   display: flex;
