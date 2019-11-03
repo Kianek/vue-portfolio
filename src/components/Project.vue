@@ -21,8 +21,10 @@ export default {
 <style lang="scss" scoped>
 @import "../styles.scss";
 
+$bg: #f0f0f0;
+
 .project {
-  background-color: $bg-panel;
+  background-color: $bg;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -32,27 +34,35 @@ export default {
   overflow: hidden;
   width: 100%;
 
+  h2 {
+    @extend %font-heading;
+
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    border-bottom: 1px solid darken(#c0c0c0, 10%);
+  }
+
   p {
-    font-family: Verdana, Arial, sans-serif;
-    text-align: justify;
+    @extend %font-content;
+    padding: 1rem 1.5rem;
   }
 
   .project-link {
-    background-color: $white;
+    background-color: $bg;
+    border-top: 1px solid darken(#c0c0c0, 10%);
     color: $bg-secondary;
     font-size: 1.5rem;
-    padding-top: 0.25em;
+    line-height: 1.5;
+    padding: 0.25rem;
     text-align: center;
     width: 100%;
+    align-self: center;
   }
 
   .project-link:hover {
-    background-color: $bg-secondary;
-    color: $white;
-  }
-
-  .project-link:hover {
-    color: $link-active;
+    background-color: darken($bg, 15%);
+    color: darken($bg-secondary, 15%);
   }
 }
 

@@ -39,6 +39,10 @@ main {
   margin-bottom: auto;
 }
 
+.heading {
+  margin-top: 1.5rem;
+}
+
 .projects {
   display: flex;
   flex-wrap: wrap;
