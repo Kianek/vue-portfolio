@@ -7,7 +7,7 @@
       <button @click="toggleMenu()" class="toggle-btn">
         <i class="fas fa-bars"></i>
       </button>
-      <div id="dropdown-content" :class="[{show: isToggled}]">
+      <div id="dropdown-content" :class="[{ show: isToggled }]">
         <router-link
           v-for="path in paths"
           :key="path.url"
@@ -15,7 +15,8 @@
           @click.native="isToggled = false"
           class="link"
           exact-active-class="active"
-        >{{ path.name }}</router-link>
+          >{{ path.name }}</router-link
+        >
       </div>
     </div>
   </nav>

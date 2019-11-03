@@ -1,11 +1,11 @@
 <template>
-    <li class="project">
-      <h2>{{ name }}</h2>
-      <p>{{ description }}</p>
-      <a :href="url" class="project-link" target="_blank">
-        <i class="fab fa-github-alt"></i>
-      </a>
-    </li>
+  <li class="project">
+    <h2>{{ name }}</h2>
+    <p>{{ description }}</p>
+    <a :href="url" class="project-link" target="_blank">
+      <i class="fab fa-github-alt"></i>
+    </a>
+  </li>
 </template>
 
 <script>
