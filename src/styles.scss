@@ -4,71 +4,27 @@ $bg-panel: #89898f;
 $link-active: #c5c5c5;
 $white: #fff;
 $orange: #ff9100;
+$color-text: #45454b;
+$color-heading-text: #45454b;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+$system-default-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+  'Segoe UI Symbol';
+
+$heading-font-family: $system-default-font-family;
+$heading-font-weight: 600;
+
+$content-font-family: $system-default-font-family;
+$content-font-weight: 400;
+
+%font-heading {
+  font-family: Oswald, $heading-font-family;
+  font-weight: $heading-font-weight;
+  color: $color-heading-text;
 }
 
-body {
-  background-color: $bg-primary;
-}
-
-h1,
-h2,
-h3,
-p,
-ul,
-li {
-  color: $white;
-}
-
-h1,
-h2,
-h3 {
-  font-family: Oswald, Arial, sans-serif;
-}
-
-p {
-  color: $white;
-  padding: 0 1em 1em;
-}
-
-a {
-  transition: 0.125s;
-}
-
-.container {
-  margin: auto;
-  width: 90%;
-}
-
-.heading {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-.icon {
-  font-size: 1.75rem;
-}
-
-.justify-lt {
-  text-justify: left;
-}
-
-.margin-top {
-  margin-top: 1.5rem;
-}
-
-.panel {
-  background-color: $bg-panel;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-  overflow: hidden;
-  width: 100%;
+%font-content {
+  font-family: 'Avenir', $content-font-family;
+  font-weight: $content-font-weight;
+  color: $color-text;
 }

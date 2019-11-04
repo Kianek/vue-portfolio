@@ -1,26 +1,31 @@
 <template>
-<Page>
+  <Page>
     <div class="contact-card">
       <h1 class="heading">Contact Me</h1>
       <div class="panel">
         <p>
-          Want to get in touch? Take a look at some of my other projects on GitHub,
-          check me out on LinkedIn, or shoot me a message below.
+          Want to get in touch? Take a look at some of my other projects on
+          GitHub, check me out on LinkedIn, or shoot me a message below.
         </p>
 
         <form @submit="sendMessage">
-          <input required type="text" placeholder="Name" v-model="name">
-          <input required type="email" placeholder="Email" v-model="email">
-          <textarea required name="message" placeholder="Message" v-model="message"></textarea>
-          <input type="submit" value="Submit">
+          <input required type="text" placeholder="Name" v-model="name" />
+          <input required type="email" placeholder="Email" v-model="email" />
+          <textarea
+            required
+            name="message"
+            placeholder="Message"
+            v-model="message"
+          ></textarea>
+          <input type="submit" value="Submit" />
         </form>
       </div>
     </div>
-</Page>
+  </Page>
 </template>
 
 <script>
-import Page from '../components/layout/Page';
+import Page from "../components/layout/Page";
 
 export default {
   data() {
@@ -28,7 +33,7 @@ export default {
       name: "",
       email: "",
       message: ""
-    }
+    };
   },
   methods: {
     sendMessage: function(e) {
@@ -108,7 +113,8 @@ form {
   max-width: 350px;
   width: 70%;
 
-  input, textarea {
+  input,
+  textarea {
     border: none;
     border-radius: 5px;
     margin-bottom: 1rem;
@@ -127,8 +133,8 @@ form {
     transition: 0.1s;
 
     &:hover {
-    background-color: $bg-secondary;
-    color: orange;
+      background-color: $bg-secondary;
+      color: orange;
       cursor: pointer;
     }
   }

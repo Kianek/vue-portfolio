@@ -3,7 +3,13 @@
     <div class="container">
       <h1 class="heading">Projects</h1>
       <ul class="projects">
-          <Project v-for="project in projects" :key="project.id" :name="project.name" :description="project.description" :url="project.github" />
+        <Project
+          v-for="project in projects"
+          :key="project.id"
+          :name="project.name"
+          :description="project.description"
+          :url="project.github"
+        />
       </ul>
     </div>
   </main>
@@ -31,6 +37,10 @@ export default {
 main {
   background-color: $bg-primary;
   margin-bottom: auto;
+}
+
+.heading {
+  margin-top: 1.5rem;
 }
 
 .projects {

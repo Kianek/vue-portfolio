@@ -1,5 +1,5 @@
 <template>
-<Page>
+  <Page>
     <div class="container">
       <div v-for="blurb in blurbs" :key="blurb.title" class="blurbs">
         <div class="panel">
@@ -8,7 +8,7 @@
         </div>
       </div>
     </div>
-</Page>
+  </Page>
 </template>
 
 <script>
@@ -18,7 +18,7 @@ import data from "./data/home.json";
 export default {
   data() {
     return {
-      blurbs: data,
+      blurbs: data
     };
   },
   components: {
