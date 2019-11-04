@@ -31,7 +31,6 @@ $bg: #f0f0f0;
   align-items: center;
   justify-content: center;
   margin-bottom: 3rem;
-  overflow: hidden;
   width: 100%;
 
   h2 {
@@ -41,15 +40,16 @@ $bg: #f0f0f0;
     text-align: center;
     padding: 0.5rem;
     border-bottom: 1px solid darken(#c0c0c0, 10%);
+    flex: 0 0 auto;
   }
 
   p {
     @extend %font-content;
     padding: 1rem 1.5rem;
+    flex: 1 1 auto;
   }
 
   .project-link {
-    background-color: $bg;
     border-top: 1px solid darken(#c0c0c0, 10%);
     color: $bg-secondary;
     font-size: 1.5rem;
@@ -69,7 +69,6 @@ $bg: #f0f0f0;
 @media screen and (min-width: 600px) {
   .project {
     margin: 1rem;
-    height: 100%;
     width: 300px;
   }
 }

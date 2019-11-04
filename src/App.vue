@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Navbar />
-    <router-view></router-view>
+    <router-view />
     <Footer />
   </div>
 </template>
@@ -21,6 +21,92 @@ export default {
 
 <style lang="scss">
 @import "./styles.scss";
+
+
+// == Fade
+//
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 100ms ease-in-out;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bg-primary;
+  overflow-y: scroll;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  color: $white;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Oswald, Arial, sans-serif;
+}
+
+p {
+  color: $white;
+  padding: 0 1em 1em;
+}
+
+a {
+  transition: 0.125s;
+}
+
+.container {
+  margin: auto;
+  width: 90%;
+}
+
+.heading {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.icon {
+  font-size: 1.75rem;
+}
+
+.justify-lt {
+  text-justify: left;
+}
+
+.margin-top {
+  margin-top: 1.5rem;
+}
+
+.margin-bottom {
+  margin-top: 1.5rem;
+}
+
+.panel {
+  background-color: $bg-panel;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  width: 100%;
+}
 
 body {
   background-color: $bg-primary;
