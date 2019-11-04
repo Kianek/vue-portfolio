@@ -22,19 +22,6 @@ export default {
 <style lang="scss">
 @import "./styles.scss";
 
-
-// == Fade
-//
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 100ms ease-in-out;
-}
-
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-}
-
 * {
   margin: 0;
   padding: 0;

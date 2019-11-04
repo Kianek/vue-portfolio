@@ -58,6 +58,8 @@ $bg: #f0f0f0;
     text-align: center;
     width: 100%;
     align-self: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
 
   .project-link:hover {
