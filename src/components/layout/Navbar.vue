@@ -1,22 +1,32 @@
 <template>
   <nav>
     <div class="nav-items">
-      <router-link to="/" class="branding">
+      <router-link
+        to="/"
+        class="branding"
+      >
         <span>Keanu</span> Allridge
       </router-link>
-      <button @click="toggleMenu()" class="toggle-btn">
-        <i class="fas fa-bars"></i>
+      <button
+        class="toggle-btn"
+        @click="toggleMenu()"
+      >
+        <i class="fas fa-bars" />
       </button>
-      <div id="dropdown-content" :class="[{ show: isToggled }]">
+      <div
+        id="dropdown-content"
+        :class="[{ show: isToggled }]"
+      >
         <router-link
           v-for="path in paths"
           :key="path.url"
           :to="path.url"
-          @click.native="isToggled = false"
           class="link"
           exact-active-class="active"
-          >{{ path.name }}</router-link
+          @click.native="isToggled = false"
         >
+          {{ path.name }}
+        </router-link>
       </div>
     </div>
   </nav>

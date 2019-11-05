@@ -2,8 +2,12 @@
   <li class="project">
     <h2>{{ name }}</h2>
     <p>{{ description }}</p>
-    <a :href="url" class="project-link" target="_blank">
-      <i class="fab fa-github-alt"></i>
+    <a
+      :href="url"
+      class="project-link"
+      target="_blank"
+    >
+      <i class="fab fa-github-alt" />
     </a>
   </li>
 </template>

@@ -9,15 +9,28 @@
         </p>
 
         <form @submit="sendMessage">
-          <input required type="text" placeholder="Name" v-model="name" />
-          <input required type="email" placeholder="Email" v-model="email" />
+          <input
+            required
+            type="text"
+            placeholder="Name"
+            v-model="name"
+          />
+          <input
+            required
+            type="email"
+            placeholder="Email"
+            v-model="email"
+          />
           <textarea
             required
             name="message"
             placeholder="Message"
             v-model="message"
           ></textarea>
-          <input type="submit" value="Submit" />
+          <input
+            type="submit"
+            value="Submit"
+          />
         </form>
       </div>
     </div>

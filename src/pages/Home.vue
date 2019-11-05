@@ -1,10 +1,16 @@
 <template>
   <Page>
     <div class="container">
-      <div v-for="blurb in blurbs" :key="blurb.title" class="blurbs">
+      <div
+        v-for="blurb in blurbs"
+        :key="blurb.title"
+        class="blurbs"
+      >
         <div class="panel">
           <h2>{{ blurb.title }}</h2>
-          <p class="blurb">{{ blurb.body }}</p>
+          <p class="blurb">
+            {{ blurb.body }}
+          </p>
         </div>
       </div>
     </div>
@@ -16,13 +22,13 @@ import Page from "@/components/layout/Page";
 import data from "./data/home.json";
 
 export default {
+  components: {
+    Page
+  },
   data() {
     return {
       blurbs: data
     };
-  },
-  components: {
-    Page
   }
 };
 </script>

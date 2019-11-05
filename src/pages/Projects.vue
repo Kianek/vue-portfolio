@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="container">
-      <h1 class="heading">Projects</h1>
+      <h1 class="heading"> Projects </h1>
       <ul class="projects">
         <Project
           v-for="project in projects"
