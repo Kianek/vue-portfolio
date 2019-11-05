@@ -1,6 +1,6 @@
 <template>
   <Page>
-    <div class="container">
+    <div class="container bg-image">
       <div
         v-for="blurb in blurbs"
         :key="blurb.title"
@@ -35,6 +35,13 @@ export default {
 
 <style lang="scss" scoped>
 @import "../styles.scss";
+
+div.bg-image {
+  background-image: url("../assets/computer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+}
 
 .blurbs {
   display: flex;
