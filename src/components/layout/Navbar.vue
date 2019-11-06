@@ -64,7 +64,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../styles.scss";
+@import "../../colors.scss";
 
 nav {
   background-color: $bg-secondary;

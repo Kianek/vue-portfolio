@@ -23,6 +23,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../colors.scss";
 @import "../styles.scss";
 
 $bg: #f0f0f0;

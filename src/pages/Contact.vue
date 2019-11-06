@@ -70,7 +70,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles.scss";
+@import "../colors.scss";
 
 main {
   background-color: $bg-primary;
