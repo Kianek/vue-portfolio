@@ -29,7 +29,7 @@ export default {
 }
 
 body {
-  background-color: $bg-primary;
+  background-color: #000;
   overflow-y: scroll;
 }
 
@@ -93,13 +93,6 @@ a {
   margin-bottom: 1.5rem;
   overflow: hidden;
   width: 100%;
-}
-
-body {
-  background-color: $bg-primary;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 #app {
