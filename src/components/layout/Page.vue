@@ -1,8 +1,22 @@
 <template>
-  <main id="page">
+  <main
+    id="page"
+    :class="classes"
+  >
     <slot></slot>
   </main>
 </template>
+
+<script>
+export default {
+  props: {
+    classes: {
+      default: "",
+      type: String
+    }
+  }
+};
+</script>
 
 <style scoped lang="scss">
 #page {
