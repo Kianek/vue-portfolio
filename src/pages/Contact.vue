@@ -73,7 +73,7 @@ export default {
 @import "../colors.scss";
 
 main {
-  background-color: $bg-primary;
+  margin-bottom: auto;
   min-height: 100%;
 }
 
@@ -87,7 +87,10 @@ main {
 }
 
 .panel > p {
-  font-family: Verdana, Arial, sans-serif;
+  border-bottom: solid 1px #45454b;
+  color: #45454b;
+  font-family: "Avenir", Arial, sans-serif;
+  margin-bottom: 1.5em;
   padding: 1em;
 }
 .contact-btn-group {
@@ -129,6 +132,7 @@ form {
   input,
   textarea {
     border: none;
+    height: 1.5em;
     border-radius: 5px;
     margin-bottom: 1rem;
     font-size: 1em;
@@ -140,14 +144,13 @@ form {
   }
 
   input[type="submit"] {
-    background-color: $bg-primary;
-    color: $white;
+    background-color: $white;
+    color: #45454b;
     height: 100%;
     transition: 0.1s;
 
     &:hover {
-      background-color: $bg-secondary;
-      color: orange;
+      background-color: #c5c5c5;
       cursor: pointer;
     }
   }
