@@ -84,7 +84,7 @@ a {
 }
 
 .panel {
-  background-color: $bg-panel;
+  background-color: #f0f0f0;
   border-radius: 2px;
   display: flex;
   flex-direction: column;
