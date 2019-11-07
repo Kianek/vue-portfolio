@@ -1,7 +1,7 @@
 <template>
   <Page classes="black">
     <header>
-      <h2>Clever Quip</h2>
+      <h2>Inspirational Quote</h2>
       <img
         id="bg-image"
         src="@/assets/computer-bg.jpg"
@@ -43,6 +43,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../styles.scss";
+@import "../colors";
 
 $bg: #f0f0f0;
 
@@ -54,11 +55,12 @@ header {
 
   h2 {
     color: $bg;
-    font-size: 3em;
+    font-size: 3rem;
     position: absolute;
     top: 30%;
     left: 0;
     text-align: center;
+    text-shadow: 0 5px 5px $orange;
     width: 100%;
     z-index: 10;
   }
