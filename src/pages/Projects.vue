@@ -35,7 +35,7 @@ export default {
 @import "../colors.scss";
 
 main {
-  background-color: $bg-primary;
+  background-color: #000;
   margin-bottom: auto;
 }
 
