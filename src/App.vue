@@ -29,7 +29,7 @@ export default {
 }
 
 body {
-  background-color: #000;
+  background-color: $black;
   overflow-y: scroll;
 }
 
@@ -45,7 +45,7 @@ li {
 h1,
 h2,
 h3 {
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
 }
 
 p {
@@ -84,11 +84,11 @@ a {
 }
 
 .panel {
-  background-color: #f0f0f0;
+  align-items: center;
+  background-color: $lighter-gray;
   border-radius: 2px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   margin-bottom: 1.5rem;
   overflow: hidden;
@@ -96,11 +96,11 @@ a {
 }
 
 #app {
+  display: flex;
+  flex-direction: column;
   font-family: "Oswald", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
 }
 </style>

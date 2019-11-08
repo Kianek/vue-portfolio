@@ -29,11 +29,11 @@ export default {
 $bg: #f0f0f0;
 
 .project {
-  background-color: $bg;
+  align-items: center;
+  background-color: $lighter-gray;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   margin-bottom: 3rem;
   width: 100%;
@@ -41,35 +41,36 @@ $bg: #f0f0f0;
   h2 {
     @extend %font-heading;
 
-    width: 100%;
-    text-align: center;
-    padding: 0.5rem;
     border-bottom: 1px solid darken(#c0c0c0, 10%);
     flex: 0 0 auto;
+    padding: 0.5rem;
+    text-align: center;
+    width: 100%;
   }
 
   p {
     @extend %font-content;
-    padding: 1rem 1.5rem;
+
     flex: 1 1 auto;
+    padding: 1rem 1.5rem;
   }
 
   .project-link {
+    align-self: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     border-top: 1px solid darken(#c0c0c0, 10%);
-    color: $bg-secondary;
+    color: $dark-gray;
     font-size: 1.5rem;
     line-height: 1.5;
     padding: 0.25rem;
     text-align: center;
     width: 100%;
-    align-self: center;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
   }
 
   .project-link:hover {
-    background-color: darken($bg, 15%);
-    color: darken($bg-secondary, 15%);
+    background-color: darken($lighter-gray, 15%);
+    color: darken($dark-gray, 15%);
   }
 }
 

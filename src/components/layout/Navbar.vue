@@ -67,7 +67,7 @@ export default {
 @import "../../colors.scss";
 
 nav {
-  background-color: $bg-secondary;
+  background-color: $dark-gray;
 }
 
 .nav-items {
@@ -83,7 +83,7 @@ nav {
   display: none;
 
   &.show {
-    background-color: $bg-secondary;
+    background-color: $dark-gray;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -113,14 +113,14 @@ nav {
 }
 
 .link {
-  color: #fff;
+  border-bottom: 3px solid transparent;
+  color: $white;
   font-size: 1.1em;
   text-decoration: none;
   padding: 1em;
-  border-bottom: 3px solid transparent;
 
   &:hover {
-    color: #c5c5c5;
+    color: $light-gray;
   }
 
   &.active {
@@ -130,7 +130,7 @@ nav {
 }
 
 .toggle-btn {
-  background-color: $bg-secondary;
+  background-color: $dark-gray;
   border: none;
   color: $white;
   cursor: pointer;
@@ -140,9 +140,9 @@ nav {
 
 @media screen and (min-width: 600px) {
   #dropdown-content {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
   }
 

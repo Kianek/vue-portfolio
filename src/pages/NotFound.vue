@@ -11,13 +11,18 @@
 </template>
 
 <style lang="scss" scoped>
-@import "../styles.scss";
+@import "../colors";
 
 .not-found {
   margin: 1rem auto 2rem;
 
+  h1 {
+    color: $dark-gray;
+  }
+
   p {
-    font-family: Verdana, Arial, sans-serif;
+    color: $dark-gray;
+    font-family: "Avenir", Arial, sans-serif;
   }
 }
 </style>

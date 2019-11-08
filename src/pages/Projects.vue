@@ -35,7 +35,7 @@ export default {
 @import "../colors.scss";
 
 main {
-  background-color: #000;
+  background-color: $black;
   margin-bottom: auto;
 }
 
@@ -44,11 +44,11 @@ main {
 }
 
 .projects {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
-  align-items: center;
   justify-content: center;
+  list-style: none;
   margin: 0 auto;
   padding: 0;
   width: 80%;
@@ -56,8 +56,8 @@ main {
 
 @media screen and (min-width: 600px) {
   .projects {
-    display: flex;
     align-items: stretch;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;

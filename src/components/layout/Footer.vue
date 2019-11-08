@@ -28,7 +28,8 @@ export default {};
 
 footer {
   align-items: center;
-  background-color: $bg-secondary;
+  background-color: $dark-gray;
+  // TODO: extend column
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,12 +47,12 @@ footer {
     padding: 0.75em;
 
     &:hover {
-      color: $link-active;
+      color: $light-gray;
     }
   }
 
   hr {
-    color: $bg-primary;
+    color: $base-gray;
     margin-bottom: 1em;
     width: 80%;
   }

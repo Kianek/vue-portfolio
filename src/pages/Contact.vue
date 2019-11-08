@@ -87,15 +87,15 @@ main {
 }
 
 .panel > p {
-  border-bottom: solid 1px #45454b;
-  color: #45454b;
+  border-bottom: solid 1px $dark-gray;
+  color: $dark-gray;
   font-family: "Avenir", Arial, sans-serif;
   margin-bottom: 1.5em;
   padding: 1em;
 }
 .contact-btn-group {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
   padding: 1em;
   margin-bottom: 1rem;
@@ -110,7 +110,7 @@ main {
 }
 
 .contact-info {
-  background-color: $bg-secondary;
+  background-color: $dark-gray;
   color: $white;
   font-size: 2rem;
   padding: 1rem;
@@ -119,7 +119,7 @@ main {
 }
 
 .contact-info:hover {
-  color: $bg-secondary;
+  color: $dark-gray;
   background-color: $white;
 }
 
@@ -132,10 +132,10 @@ form {
   input,
   textarea {
     border: none;
-    height: 1.5em;
     border-radius: 5px;
-    margin-bottom: 1rem;
     font-size: 1em;
+    height: 1.5em;
+    margin-bottom: 1rem;
     padding: 0.5em;
   }
 

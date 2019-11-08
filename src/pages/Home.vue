@@ -43,9 +43,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../styles.scss";
-@import "../colors";
-
-$bg: #f0f0f0;
+@import "../colors.scss";
 
 header {
   display: flex;
@@ -54,11 +52,11 @@ header {
   width: 100%;
 
   h2 {
-    color: $bg;
+    color: $lighter-gray;
     font-size: 3rem;
     position: absolute;
-    top: 30%;
     left: 0;
+    top: 30%;
     text-align: center;
     text-shadow: 0 5px 5px $orange;
     width: 100%;
@@ -67,7 +65,7 @@ header {
 }
 
 .black {
-  background-color: #000;
+  background-color: $black;
 }
 
 #bg-image {
@@ -79,8 +77,8 @@ header {
   display: flex;
   flex-direction: column;
   margin: 1.5rem auto;
-  min-width: 60%;
   max-width: 70%;
+  min-width: 60%;
 
   .blurb {
     border-radius: 5px;
@@ -88,18 +86,18 @@ header {
     font-size: 1em;
     text-align: justify;
     max-width: 90%;
-    background-color: $bg;
+    background-color: $lighter-gray;
     margin: auto;
 
     h2 {
-      color: #45454b;
+      color: $dark-gray;
       line-height: 1.7em;
       text-align: center;
     }
 
     p {
       @extend %font-content;
-      border-top: solid 1px #45454b;
+      border-top: solid 1px $dark-gray;
       padding: 1em;
     }
   }

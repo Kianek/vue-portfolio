@@ -20,11 +20,11 @@ export default {
 
 <style scoped lang="scss">
 #page {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 100%;
   justify-content: center;
   margin: auto;
-  height: 100%;
 }
 </style>
