@@ -62,15 +62,15 @@ header {
     width: 100%;
     z-index: 10;
   }
+
+  #bg-image {
+    height: auto;
+    width: 100%;
+  }
 }
 
 .black {
   background-color: $black;
-}
-
-#bg-image {
-  height: auto;
-  width: 100%;
 }
 
 .blurbs {
@@ -100,6 +100,14 @@ header {
       border-top: solid 1px $dark-gray;
       padding: 1em;
     }
+  }
+}
+
+@media screen and (min-width: 650px) {
+  header > #bg-image {
+    object-fit: cover;
+    height: 600px;
+    width: 100%;
   }
 }
 </style>
