@@ -92,7 +92,6 @@ header {
     left: 0;
     top: 30%;
     text-align: center;
-    text-shadow: 0 5px 5px #2d81ff;
     width: 100%;
     z-index: 10;
   }
