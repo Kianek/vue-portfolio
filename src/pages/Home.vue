@@ -1,7 +1,7 @@
 <template>
   <Page classes="black">
     <header>
-      <h2>Inspirational Quote</h2>
+      <h2>[Inspirational Quote]</h2>
       <img
         id="bg-image"
         src="@/assets/computer-bg.jpg"
@@ -58,12 +58,12 @@ header {
     left: 0;
     top: 30%;
     text-align: center;
-    text-shadow: 0 5px 5px $orange;
+    text-shadow: 0 5px 5px #2d81ff;
     width: 100%;
     z-index: 10;
   }
 
-  #bg-image {
+  img {
     height: auto;
     width: 100%;
   }
