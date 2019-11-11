@@ -1,7 +1,13 @@
 <template>
   <Page>
+    <header>
+      <h2 class="heading">Contact Me</h2>
+      <img
+        src="../assets/keyboard.jpg"
+        alt="Dark keyboard"
+      >
+    </header>
     <div class="contact-card">
-      <h1 class="heading">Contact Me</h1>
       <div class="panel">
         <p>
           Want to get in touch? Take a look at some of my other projects on
@@ -72,13 +78,34 @@ export default {
 <style lang="scss" scoped>
 @import "../colors.scss";
 
-main {
-  margin-bottom: auto;
-  min-height: 100%;
+header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  position: relative;
+  width: 100%;
+
+  h2 {
+    color: $lighter-gray;
+    font-size: 3rem;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    text-align: center;
+    text-shadow: 0 5px 5px #2d81ff;
+    width: 100%;
+    z-index: 10;
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+  }
 }
 
 .contact-card {
   margin: 0 auto;
+  max-width: 500px;
   width: 70%;
 }
 
@@ -163,5 +190,13 @@ form {
 
 address {
   font-style: normal;
+}
+
+@media screen and (min-width: 650px) {
+  header > img {
+    object-fit: cover;
+    height: 600px;
+    width: 100%;
+  }
 }
 </style>
