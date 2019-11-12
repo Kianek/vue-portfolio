@@ -85,7 +85,6 @@ export default {
       };
 
       const msg = this.encode({
-        "form-name": "message",
         name: this.name,
         email: this.email,
         message: this.message
@@ -95,7 +94,7 @@ export default {
         .post(
           "/",
           this.encode({
-            "form-name": "message",
+            "form-name": "contact-form",
             ...msg
           }),
           opts
