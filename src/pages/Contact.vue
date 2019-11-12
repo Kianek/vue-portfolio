@@ -79,19 +79,15 @@ export default {
         header: { "Content-Type": "application/x-www-form-urlencoded" }
       };
 
-      const message = {
-        name: this.name,
-        email: this.email,
-        message: this.message
-      };
-
       this.name = this.email = this.message = "";
 
       axios.post(
         "/",
         this.encode({
           "form-name": "message",
-          ...this.data
+          name: this.name,
+          email: this.email,
+          message: this.message
         }),
         opts
       );
