@@ -84,11 +84,11 @@ export default {
         header: { "Content-Type": "application/x-www-form-urlencoded" }
       };
 
-      const msg = this.encode({
+      const msg = {
         name: this.name,
         email: this.email,
         message: this.message
-      });
+      };
 
       axios
         .post(
