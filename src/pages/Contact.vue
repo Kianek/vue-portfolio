@@ -14,6 +14,8 @@
           GitHub, check me out on LinkedIn, or shoot me a message below.
         </p>
 
+        <p v-if="msgSuccess">Message Sent!</p>
+        <p v-else-if="msgErr">Something went wrong..</p>
         <form
           @submit.prevent="sendMessage"
           name="contact-form"
@@ -59,11 +61,14 @@ import Page from "../components/layout/Page";
 import axios from "axios";
 
 export default {
+  name: "ContactForm",
   data() {
     return {
       name: "",
       email: "",
-      message: ""
+      message: "",
+      msgSuccess: false,
+      msgErr: false
     };
   },
   methods: {
@@ -74,23 +79,29 @@ export default {
         )
         .join("&");
     },
-    sendMessage: function(e) {
+    sendMessage: function() {
       const opts = {
         header: { "Content-Type": "application/x-www-form-urlencoded" }
       };
 
-      this.name = this.email = this.message = "";
+      const msg = this.encode({
+        "form-name": "message",
+        name: this.name,
+        email: this.email,
+        message: this.message
+      });
 
-      axios.post(
-        "/",
-        this.encode({
-          "form-name": "message",
-          name: this.name,
-          email: this.email,
-          message: this.message
-        }),
-        opts
-      );
+      axios
+        .post(
+          "/",
+          this.encode({
+            "form-name": "message",
+            ...msg
+          }),
+          opts
+        )
+        .then(() => (this.msgSuccess = true))
+        .catch(() => (this.msgErr = true));
     }
   },
   components: {
