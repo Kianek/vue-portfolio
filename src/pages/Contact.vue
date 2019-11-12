@@ -14,7 +14,18 @@
           GitHub, check me out on LinkedIn, or shoot me a message below.
         </p>
 
-        <form @submit="sendMessage">
+        <form
+          @submit.prevent="sendMessage"
+          name="contact-form"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <input
+            type="hidden"
+            name="form-name"
+            value="contact-form"
+          >
           <input
             required
             type="text"
@@ -45,6 +56,7 @@
 
 <script>
 import Page from "../components/layout/Page";
+import axios from "axios";
 
 export default {
   data() {
@@ -55,8 +67,17 @@ export default {
     };
   },
   methods: {
+    encode: function(data) {
+      return Object.keys(data)
+        .map(
+          key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+        )
+        .join("&");
+    },
     sendMessage: function(e) {
-      e.preventDefault();
+      const opts = {
+        header: { "Content-Type": "application/x-www-form-urlencoded" }
+      };
 
       const message = {
         name: this.name,
@@ -65,8 +86,15 @@ export default {
       };
 
       this.name = this.email = this.message = "";
-      console.log("Submitting message!");
-      console.log(message);
+
+      axios.post(
+        "/",
+        this.encode({
+          "form-name": "message",
+          ...this.data
+        }),
+        opts
+      );
     }
   },
   components: {
