@@ -99,8 +99,15 @@ export default {
           }),
           opts
         )
-        .then(() => (this.msgSuccess = true))
-        .catch(() => (this.msgErr = true));
+        .then(() => {
+          this.msgSuccess = true;
+          this.name = this.email = this.message = "";
+          setTimeout(() => (this.msgSuccess = false), 5000);
+        })
+        .catch(() => {
+          this.msgErr = true;
+          setTimeout(() => (this.msgErr = false), 5000);
+        });
     }
   },
   components: {
