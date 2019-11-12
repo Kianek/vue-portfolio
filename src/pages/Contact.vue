@@ -25,8 +25,8 @@
         >
           <input
             type="hidden"
-            name="form-name"
-            value="contact-form"
+            name="contact-form"
+            value="contact"
           >
           <input
             required
