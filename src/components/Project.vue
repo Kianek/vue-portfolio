@@ -26,8 +26,6 @@ export default {
 @import "../colors.scss";
 @import "../styles.scss";
 
-$bg: #f0f0f0;
-
 .project {
   align-items: center;
   background-color: $lighter-gray;
