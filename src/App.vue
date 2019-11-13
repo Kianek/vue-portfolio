@@ -1,7 +1,12 @@
 <template>
   <div id="app">
     <Navbar />
-    <router-view />
+    <transition
+      name="page-fade"
+      mode="out-in"
+    >
+      <router-view />
+    </transition>
     <Footer />
   </div>
 </template>
@@ -21,6 +26,17 @@ export default {
 
 <style lang="scss">
 @import "./colors.scss";
+
+// Component Transitions
+.page-fade-enter-active,
+.page-fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.page-fade-enter,
+.page-fade-leave-to {
+  opacity: 0;
+}
 
 * {
   margin: 0;
