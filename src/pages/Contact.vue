@@ -15,8 +15,14 @@
         </p>
 
         <transition name="fade">
-          <p v-if="msgSuccess">Message Sent!</p>
-          <p v-else-if="msgErr">Something went wrong..</p>
+          <p
+            v-if="msgSuccess"
+            key="sucess"
+          >Message Sent!</p>
+          <p
+            v-else-if="msgErr"
+            key="error"
+          >Something went wrong..</p>
         </transition>
         <form
           @submit.prevent="sendMessage"
