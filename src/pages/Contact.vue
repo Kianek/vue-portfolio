@@ -14,8 +14,10 @@
           GitHub, check me out on LinkedIn, or shoot me a message below.
         </p>
 
-        <p v-if="msgSuccess">Message Sent!</p>
-        <p v-else-if="msgErr">Something went wrong..</p>
+        <transition name="fade">
+          <p v-if="msgSuccess">Message Sent!</p>
+          <p v-else-if="msgErr">Something went wrong..</p>
+        </transition>
         <form
           @submit.prevent="sendMessage"
           name="contact-form"
@@ -118,6 +120,16 @@ export default {
 
 <style lang="scss" scoped>
 @import "../colors.scss";
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 1s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
 
 header {
   display: flex;
