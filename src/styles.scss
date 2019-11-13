@@ -22,3 +22,13 @@ $content-font-weight: 400;
   font-weight: $content-font-weight;
   color: $color-text;
 }
+
+%column {
+  display: flex;
+  flex-direction: column;
+}
+
+%row {
+  display: flex;
+  flex-direction: row;
+}
