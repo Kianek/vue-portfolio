@@ -38,6 +38,8 @@ export default {
   opacity: 0;
 }
 
+// General Styles
+
 * {
   margin: 0;
   padding: 0;
