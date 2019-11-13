@@ -28,8 +28,7 @@ export default {};
 
 footer {
   align-items: center;
-  background-color: $dark-gray;
-  // TODO: extend column
+  background-color: $black;
   display: flex;
   flex-direction: column;
   justify-content: center;

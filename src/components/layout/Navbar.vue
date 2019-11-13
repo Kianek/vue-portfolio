@@ -67,7 +67,7 @@ export default {
 @import "../../colors.scss";
 
 nav {
-  background-color: $dark-gray;
+  background-color: $black;
 }
 
 .nav-items {
@@ -83,7 +83,7 @@ nav {
   display: none;
 
   &.show {
-    background-color: $dark-gray;
+    background-color: $black;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -130,7 +130,7 @@ nav {
 }
 
 .toggle-btn {
-  background-color: $dark-gray;
+  background-color: $black;
   border: none;
   color: $white;
   cursor: pointer;
