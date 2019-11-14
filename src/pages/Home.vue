@@ -1,5 +1,5 @@
 <template>
-  <Page classes="black">
+  <Page>
     <header>
       <h2>[Inspirational Quote]</h2>
       <img
