@@ -56,7 +56,7 @@ header {
     left: 0;
     top: 30%;
     text-align: center;
-    text-shadow: 0 5px 5px #2d81ff;
+    text-shadow: 0 5px 5px #ff8b2d;
     width: 100%;
     z-index: 10;
   }
