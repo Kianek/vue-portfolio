@@ -217,7 +217,7 @@ form {
 
   input,
   textarea {
-    border: none;
+    border: solid 1px #c5c5c5;
     border-radius: 5px;
     font-size: 1em;
     height: 1.5em;
@@ -237,6 +237,7 @@ form {
 
     &:hover {
       background-color: #c5c5c5;
+      color: $white;
       cursor: pointer;
     }
   }
